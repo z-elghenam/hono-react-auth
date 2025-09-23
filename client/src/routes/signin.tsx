@@ -26,10 +26,14 @@ function RouteComponent() {
     setLoading(true)
 
     try {
-      await authClient.signIn.email({
+      const res = await authClient.signIn.email({
         email,
         password,
       })
+
+      if (res.error) {
+        throw new Error(res.error.message || 'Sign-in failed')
+      }
 
       router.navigate({ to: '/todos' })
     } catch (err) {
