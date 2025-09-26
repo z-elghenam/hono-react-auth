@@ -1,0 +1,11 @@
+node_modules
+bun.lockb
+.git
+.gitignore
+README.md
+.env
+.DS_Store
+client/node_modules
+client/dist
+dist
+*.log
