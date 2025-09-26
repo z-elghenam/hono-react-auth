@@ -1,5 +1,4 @@
 node_modules
-bun.lockb
 .git
 .gitignore
 README.md
@@ -8,4 +7,3 @@ README.md
 client/node_modules
 client/dist
 dist
-*.log
